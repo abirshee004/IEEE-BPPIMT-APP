@@ -2,6 +2,8 @@
 An official app for the IEEE BPPIMT Student Chapter, designed to streamline event management, notices, and educational resources while fostering innovation and collaboration among students.
 
 
+DOWNLOAD APP
+https://github.com/abirshee004/IEEE-BPPIMT-APP/releases/download/v1.0.0/ieee_bppimt.apk
 
 🔥 Key Features
 ✅ Role-Based Access
