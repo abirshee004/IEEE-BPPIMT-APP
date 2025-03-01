@@ -1,0 +1,90 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@android:color/white">
+
+    <!-- Title for the Form -->
+
+    <!-- Input Field for Google Form Link -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="Add Event"
+        android:textColor="#0097A7"
+        android:textSize="34sp"
+        android:textStyle="bold" />
+
+    <!-- ✅ Input Field for Event Title (Newly Added) -->
+    <EditText
+        android:id="@+id/eventTitleInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/editbox_background"
+        android:hint="Enter Event Title"
+        android:importantForAccessibility="yes"
+        android:inputType="text"
+        android:padding="12dp" />
+
+    <EditText
+        android:id="@+id/eventFormLinkInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/editbox_background"
+        android:hint="Enter Google Form Link"
+        android:importantForAccessibility="yes"
+        android:inputType="textUri"
+        android:padding="12dp" />
+
+    <!-- Input Field for Event Description -->
+    <EditText
+        android:id="@+id/eventDescriptionInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@android:drawable/editbox_background"
+        android:hint="Enter Event Description"
+        android:importantForAccessibility="yes"
+        android:padding="12dp" />
+
+    <!-- Input Field for Event Open Date -->
+    <EditText
+        android:id="@+id/eventOpenDateInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@android:drawable/editbox_background"
+        android:hint="Enter Event Opening Date"
+        android:importantForAccessibility="yes"
+        android:inputType="date"
+        android:padding="12dp" />
+
+    <!-- Input Field for Event Closing Date -->
+    <EditText
+        android:id="@+id/eventCloseDateInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@android:drawable/editbox_background"
+        android:hint="Enter Event Closing Date"
+        android:importantForAccessibility="yes"
+        android:inputType="date"
+        android:padding="12dp" />
+
+    <!-- Button to Save Event -->
+    <Button
+        android:id="@+id/saveEventButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save Event"
+        android:padding="12dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorPrimary"
+        android:textColor="@android:color/white"
+        android:importantForAccessibility="yes"
+        android:contentDescription="Button to save event data" />
+
+</LinearLayout>

@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTintMode="multiply"
+    android:background="@drawable/animated_background"
+    tools:context=".RoleSelectionActivity">
+
+    <!-- Scrollable Content Above the Band -->
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="none"
+        android:padding="20dp"
+        android:layout_marginBottom="80dp"> <!-- Prevent overlap -->
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <!-- IEEE Logo -->
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:src="@drawable/ieee"
+                android:contentDescription="IEEE Logo"
+                android:layout_marginBottom="20dp"/>
+
+            <!-- Welcome Text -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Welcome to IEEE BPPIMT 🙏🏼"
+                android:textColor="@color/primaryBlue"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginBottom="20dp"/>
+
+            <!-- IEEE Information Sections -->
+            <TextView
+                android:id="@+id/whatIsIeee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="What is IEEE?"
+                android:textColor="#009688"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/ieeeDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The Institute of Electrical and Electronics Engineers (IEEE) is a global professional association dedicated to advancing technology for humanity. Founded in 1963, IEEE is one of the largest organizations of its kind, with over 400,000 members across more than 160 countries. It focuses on a wide range of fields including electrical engineering, electronics, computer science, and telecommunications. IEEE fosters innovation through its publications, standards, conferences, and educational initiatives. It develops industry standards in areas such as networking, electrical systems, and computing. Additionally, IEEE offers professional development opportunities, networking events, and research collaborations to support the growth and development of engineers and technologists worldwide...."
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:layout_marginBottom="10dp"/>
+
+            <!-- Additional Sections -->
+            <TextView
+                android:id="@+id/studentBranchTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="IEEE Student Branch"
+                android:textColor="@color/primaryBlue"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:id="@+id/studentBranchDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="An IEEE Student Branch is a local chapter of the IEEE organization at a university or college, providing students with access to resources, networking opportunities, and events related to engineering and technology. It offers professional development, educational workshops, and a platform for students to collaborate on technical projects and research..."
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:layout_marginBottom="10dp"/>
+
+            <!--            Missions-->
+            <TextView
+                android:id="@+id/missionTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="Mission"
+                android:textColor="#9575CD"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/missionDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="IEEE's mission is to advance technology for humanity by fostering innovation, education, and collaboration in engineering, science, and technology fields to address global challenges."
+                android:textSize="16sp"
+                android:layout_marginBottom="20dp"/>
+
+            <!--            Vissions-->
+            <TextView
+                android:id="@+id/visionTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Visions"
+                android:textColor="@color/orange"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:id="@+id/visionDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="IEEE envisions a world where technology enables human progress, empowers individuals, and creates solutions to the most pressing global challenges, improving lives worldwide."
+                android:textSize="16sp"
+                android:layout_marginBottom="20dp"/>
+
+            <!-- Activities Section -->
+            <TextView
+                android:id="@+id/activitiesTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Activities"
+                android:textColor="@color/pink"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:id="@+id/activitiesDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" IEEE conducts conferences, workshops, and technical events, providing platforms for networking, learning, and collaboration among students, professionals, and researchers in various engineering disciplines..."
+                android:textSize="16sp"
+                android:layout_marginBottom="20dp"/>
+
+            <!-- College Location with Image -->
+            <ImageView
+                android:id="@+id/locationImage"
+                android:layout_width="200dp"
+                android:layout_height="250dp"
+                android:src="@drawable/college_location"
+                android:contentDescription="College Location"
+                android:layout_marginBottom="20dp"
+                android:onClick="openLocationInMaps"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BPPIMT Campus Location"
+                android:textColor="@color/red2"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginBottom="20dp"/>
+
+        <!-- Website Link -->
+            <TextView
+                android:id="@+id/websiteLink"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:autoLink="web"
+                android:gravity="center"
+                android:minHeight="48dp"
+                android:text="Visit Our IEEE Website ⚙️"
+                android:textColor="@color/primaryBlue"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        <!-- Follow Us Text -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Follow Us"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="10dp"/>
+
+        <!-- Social Media Icons -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/instagramIcon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/instagram"
+                android:contentDescription="Instagram"
+                android:layout_marginEnd="20dp"/>
+
+            <ImageView
+                android:id="@+id/twitterIcon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/twitter"
+                android:contentDescription="Twitter"
+                android:layout_marginEnd="20dp"/>
+
+            <ImageView
+                android:id="@+id/linkedinIcon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/linkedin"
+                android:contentDescription="LinkedIn" />
+
+        </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Fixed Band with User and Admin Buttons at the Bottom -->
+    <LinearLayout
+        android:id="@+id/bottomBand"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/black"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:elevation="8dp"
+        android:layout_alignParentBottom="true">
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/adminCard"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="20dp"
+            app:cardCornerRadius="12dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:elevation="6dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/admin"
+                    android:contentDescription="Admin Icon"
+                    android:layout_marginBottom="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Admin"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/userCard"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="20dp"
+            app:cardCornerRadius="12dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:elevation="6dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/user"
+                    android:contentDescription="User Icon"
+                    android:layout_marginBottom="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="User"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+</RelativeLayout>
